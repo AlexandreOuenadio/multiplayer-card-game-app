@@ -1,0 +1,61 @@
+version: '3'
+services:
+  usermicroservice-db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: usermicroservice
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - 5432:5432
+
+  cardmicroservice-db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: cardmicroservice
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - 5433:5432
+
+  transactionmicroservice-db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: transactionmicroservice
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - 5434:5432
+
+  gamemicroservice-db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: gamemicroservice
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - 5435:5432
+
+  roommicroservice-db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: roommicroservice
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - 5436:5432
+
+  authmicroservice-db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: authmicroservice
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - 5437:5432

@@ -1,0 +1,27 @@
+<nav class="nav" id="nav">
+    <ul>
+        <li id="back">
+            <a href="/" data-link>
+                <div class="logo-text-container back">
+                    <ion-icon name="chevron-back-outline" class="nav-icon"></ion-icon>
+                    <p class="back-title">Retour à l'accueil</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <div class="logo-text-container">
+                <ion-icon name="person-circle-outline" class="nav-icon"></ion-icon>
+                <p id="nav-username">{{username}}</p>
+            </div>
+        </li>
+        <li>
+            <div class="money-logout-container">
+                <div class="logo-text-container">
+                    <ion-icon name="cash-outline" class="nav-icon"></ion-icon>
+                    <p><span id="nav-user-money">{{money}}</span>$</p>
+                </div>
+                <button id="logoutBtn" class="logout-button">Se déconnecter</button>
+            </div>
+        </li>
+    </ul>
+</nav>

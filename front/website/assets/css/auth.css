@@ -1,0 +1,111 @@
+
+.main-auth{
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+
+}
+
+
+.form{
+
+    border-radius: var(--borderRadius);
+    width: 50rem;
+    padding: 5rem;
+    box-shadow: var(--niceShadow);
+    background-color: rgba(2, 62, 138,0.3);
+    border-radius: 8px;
+    color: white;
+    
+}
+
+.form-title{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    letter-spacing: -0.8px;
+}
+
+.form-status{
+    margin-bottom: 3rem;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    display: none;
+
+}
+
+.form-status.error{
+    display: block;
+    background-color: var(--errorColor);
+}
+
+.form-status.ok{
+    display: block;
+    background-color: var(--okColor);
+}
+
+.form-status-message{
+    font-weight: 600;
+}
+
+.form-item-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+   
+}
+
+.form-item-container.register{
+    margin-bottom: 5rem;
+}
+.form-item-container.login{
+    margin-bottom: 2rem;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-item label{
+
+    font-weight: 500;
+
+}
+
+.form-button{
+    color: white;
+    background-color: var(--buttonColor);
+    display: block;
+    width: 100%;
+}
+
+
+.link-to{
+    
+    font-size: 1.2rem;
+    display: block;
+}
+
+
+
+.link-to.register{
+    
+    margin-bottom: 2rem;
+    text-align: right;
+
+}
+
+.link-to.login{
+    margin-top: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+
+
+}
+

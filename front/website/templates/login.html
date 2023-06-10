@@ -1,0 +1,21 @@
+<main class="main-auth">
+    <form class="form" id="form-login">
+        <h1 class="form-title">Connexion</h1>
+        <div class="form-status" id="form-status">
+            <p class="form-status-message" id="form-status-message">Error Message</p>
+        </div>
+        <div class="form-item-container login">
+            <div class="form-item">
+                <label for="username">Nom</label>
+                <input type="text" name="username" id="username" placeholder="Entrer votre nom d'utilisateur" required>
+            </div>
+            <div class="form-item">
+                <label for="userpassword">Mot de passe</label>
+                <input type="password" name="userpassword" id="userpassword" placeholder="Entrer votre mot de passe" required>
+            </div>
+        </div>
+        <a href="/register" data-link class="link-to register">Vous n'êtes pas inscrit ? Cliquez ici !</a>
+        <button class="form-button">Se connecter</button>
+
+    </form>
+</main>
